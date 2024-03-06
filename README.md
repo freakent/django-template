@@ -11,3 +11,6 @@ In your repository do the following:
 
 
 pip install "psycopg[binary,pool]"
+
+Move from username to email address for login. 
+https://learndjango.com/tutorials/django-log-in-email-not-username
