@@ -55,7 +55,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'project.urls'
+ROOT_URLCONF = 'core.urls'
 
 TEMPLATES = [
     {
@@ -76,9 +76,9 @@ TEMPLATES = [
 class BootstrapFormRenderer(TemplatesSetting):
     form_template_name = "common/bootstrap_form_snippet.html"
 
-FORM_RENDERER = "project.settings.BootstrapFormRenderer"
+FORM_RENDERER = "core.settings.BootstrapFormRenderer"
 
-WSGI_APPLICATION = 'project.wsgi.application'
+WSGI_APPLICATION = 'core.wsgi.application'
 
 
 # Database
