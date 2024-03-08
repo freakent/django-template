@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'core',
+    'common',
 ]
 
 MIDDLEWARE = [
@@ -74,8 +74,7 @@ TEMPLATES = [
 ]
 
 class BootstrapFormRenderer(TemplatesSetting):
-    form_template_name = "core/bootstrap_form_snippet.html"
-    foo: "bah"
+    form_template_name = "common/bootstrap_form_snippet.html"
 
 FORM_RENDERER = "project.settings.BootstrapFormRenderer"
 

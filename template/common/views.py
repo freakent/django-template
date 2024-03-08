@@ -4,7 +4,7 @@ from .forms import SignupForm
 # Create your views here.
 def index(request):
     print("Render homepage")
-    return render(request, 'core/index.html')
+    return render(request, 'common/index.html')
 
 def signup(request):
     if request.method == 'POST':
@@ -17,4 +17,4 @@ def signup(request):
     else:
         form = SignupForm()
 
-    return render(request, 'core/signup.html', { 'form': form } )
+    return render(request, 'common/signup.html', { 'form': form } )

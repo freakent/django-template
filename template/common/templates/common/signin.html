@@ -1,4 +1,4 @@
-{% extends 'core/base.html' %}
+{% extends 'common/base.html' %}
 
 {% block title %}Sign in{% endblock %}
 
@@ -34,7 +34,7 @@
         </form>
 
         <div class="row">
-            <div class="col"><p class="text-end">Don't have an account? <a href={% url 'core:signup' %}>Sign up</a></p></div>
+            <div class="col"><p class="text-end">Don't have an account? <a href={% url 'common:signup' %}>Sign up</a></p></div>
         </div>
     </div> <!-- Right hand column -->
 
