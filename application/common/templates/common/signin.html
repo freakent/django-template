@@ -18,7 +18,7 @@
 
         <p class="lead mb-4">Welcome back! Please sign into you account to proceed.</p>
 
-        <form method="post" action="/login">
+        <form method="post" action="{% url 'common:signin' %}">
             {% csrf_token %}
 
             {{ form }} 
