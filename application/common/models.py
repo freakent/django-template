@@ -5,10 +5,10 @@ from django.conf import settings
 
 class BaseModel(models.Model):
     created_on = models.DateTimeField(auto_now_add = True)
-    created_by = models.CharField()
+    created_by = models.CharField(default="ANON")
 
     modified_on = models.DateTimeField(auto_now = True)
-    modified_by = models.CharField()
+    modified_by = models.CharField(default="ANON")
 
     class Meta:
         abstract = True
