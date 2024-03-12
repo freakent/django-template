@@ -9,7 +9,7 @@
 <h1>Sign up</h1>
 
 
-<form method="post" action="{% url 'common/signup' %}" class="">
+<form method="post" action="{% url 'common:signup' %}" class="">
     {% csrf_token %}
     {{ form }}    
 
